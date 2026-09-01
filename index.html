@@ -3546,38 +3546,6 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
  setTimeout(patchWarehouse,800);
 })();
 </script>
-
-<style id="sanh-guild-update">
-#sanhVanThanh{
- position:fixed;inset:0;z-index:5000;display:none;
- background:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.35)),url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee") center/cover;
-}
-#sanhVanThanh .box{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:white;font-family:Arial}
-#sanhVanThanh button{margin:5px;padding:12px 24px;border-radius:12px;border:0;font-weight:bold;cursor:pointer}
-.guildPanel{background:#111b;color:white;padding:15px;border-radius:15px;max-width:420px;text-align:center}
-</style>
-<div id="sanhVanThanh">
- <div class="box">
-  <div class="guildPanel">
-   <h2>🏰 SẢNH</h2>
-   <p>Bang chiến - PvP - Gacha - Boss</p>
-   <button onclick="openGuildWar()">🏰 Bang chiến</button>
-   <button onclick="openGuildShop()">🛒 Shop điểm bang</button>
-   <button onclick="closeSanh()">⬅ Đóng</button>
-  </div>
- </div>
-</div>
-<script id="guildWarSystem">
-const guildData={name:'Bang Văn Thành',point:0,rank:1};
-function openSanh(){document.getElementById('sanhVanThanh').style.display='block'}
-function closeSanh(){document.getElementById('sanhVanThanh').style.display='none'}
-function openGuildWar(){
- alert('⚔️ Ghép ngẫu nhiên 2 bang đối đầu!\\nTính damage và điểm bang sau trận.');
-}
-function openGuildShop(){
- alert('🛒 Shop bang\\n- Buff damage\\n- Khiên máu\\n- Vé triệu hồi');
-}
-</script>
 </body></html>
 <script id="performance-fix-v1">
 /* PERFORMANCE FIX V1 — giữ nguyên gameplay, giảm CPU/GPU khi animation + realtime chạy cùng lúc. */
